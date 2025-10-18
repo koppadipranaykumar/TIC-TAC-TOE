@@ -76,7 +76,7 @@ public class tictactoe {
             }
             
         }
-        System.out.println("Do you want to continue playing? (y/n): ");
+        System.out.println("Do you want to continue playing? (y/n): ");//added replay option
         char choice = in.next().charAt(0);
         if(choice == 'y' || choice == 'Y'){
             playGame(player1, player2);
