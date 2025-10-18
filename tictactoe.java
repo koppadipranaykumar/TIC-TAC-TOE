@@ -9,6 +9,7 @@ public class tictactoe {
         String player2 = in.nextLine(); 
         System.out.println(" The game started between " + player1 + " and " + player2);
         playGame(player1, player2);
+        
     }
     public static void printBoard(char[][] board) {
         System.out.println("Current Board:");
@@ -73,7 +74,18 @@ public class tictactoe {
                 currentSymbol = 'X';
                 currentPlayer = player1;
             }
+            
+        }
+        System.out.println("Do you want to continue playing? (y/n): ");
+        char choice = in.next().charAt(0);
+        if(choice == 'y' || choice == 'Y'){
+            playGame(player1, player2);
+        } else {
+            System.out.println("Thanks for playing!");
+            
+        
         }
     }
-
 }
+
+
